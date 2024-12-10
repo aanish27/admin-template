@@ -31,3 +31,5 @@ require("bootstrap");
 window.$ = require("jquery");
 require("popper.js");
 // require("bootstrap-icons");
+// @import "";
+require("../assets/fontawesome/js/all.min.js");
