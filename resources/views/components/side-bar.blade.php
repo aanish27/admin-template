@@ -40,6 +40,19 @@
           </ul>
 
         </li>
+        <li class="nav-item">
+          <a href="#" class=" nav-link">
+           <i class="nav-icon fa-brands fa-dropbox"></i>
+            <p>Dropbox</p>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#" class=" nav-link">
+            <i class="nav-icon fa-solid fa-cloud"></i>
+            <p>Cloud-Ops</p>
+          </a>
+        </li>
       </ul>
     </nav>
   </div>
