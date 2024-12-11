@@ -7,12 +7,13 @@
     <title> {{ $title }} </title>
     <link rel="stylesheet" href="/css/app.css">
 </head>
+
 <body class="layout-fixed control-sidebar-push-slide hold-transition skin-blue sidebar-collapse sidebar-mini">
-  <div class="wrapper">
-    <x-nav-bar/>
-    <x-side-bar/>
-    {{ $slot }}
-  </div>
-  <script src="/js/app.js"></script>
+    <div class="wrapper">
+        <x-nav-bar/>
+        <x-side-bar/>
+        {{ $slot }}
+    </div>
+    <script src="/js/app.js"></script>
 </body>
 </html>
