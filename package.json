@@ -16,8 +16,6 @@
         "postcss": "^8.1.14"
     },
     "dependencies": {
-        "bootstrap": "4.6",
-        "jquery": "^3.7.1",
-        "popper.js": "^1.16.1"
+        "bootstrap": "4.6"
     }
 }
