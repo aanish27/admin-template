@@ -21,7 +21,19 @@
     </ul>
     <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-            <a class="nav-link"><i class="fa-solid fa-right-from-bracket"></i></a>
+            <a class="nav-link log-out-link"><i class="fa-solid fa-right-from-bracket"></i></a>
+            <form id="logout-form" action="{{ route('log-out') }}" method="get">
+                @csrf
+            </form>
         </li>
     </ul>
 </nav>
+
+<script type="module">
+     $(function () {
+        $('.log-out-link').on('click', function (e) {
+            e.preventDefault();
+            $('#logout-form').submit();
+        });
+     });
+</script>
