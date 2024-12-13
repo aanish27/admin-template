@@ -15,12 +15,13 @@ class LoginController extends Controller
      */
     public function login(Request $request)
     {
+
         $credentials = $request->validate([
             'email' => ['required', 'email'],
             'password' => ['required'],
         ]);
 
-        if (Auth::attempt($credentials)) {
+        if (Auth::attempt($credentials , ($request->remember == 'on' ? true : false) )) {
             $request->session()->regenerate();
             return redirect('/');
 
