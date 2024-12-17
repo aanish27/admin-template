@@ -14,10 +14,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+
 Route::middleware(['auth'])->group(function () {
-    Route::get('/', function () {
+    Route::redirect('/', 'dashboard');
+    Route::get('dashboard', function () {
         return view('dashboard.admin');
-    });
+    })->name('dashboard');
     Route::get('logout', [LoginController::class, 'logout'])->name('log-out');
 });
 
