@@ -50,9 +50,9 @@
         </div>
       </form>
       @if ( Session::has('errors'))
-        <div class="alert alert-danger" >
-        <p>{{ $errors }}</p>
-        </div>
+        @foreach ($errors->all() as $error )
+          <div class="alert alert-danger my-2" role="alert"> {{ $error }} </div>
+        @endforeach
       @endif
       <p class="mb-1">
         <a href="forgot-password.html">I forgot my password</a>
